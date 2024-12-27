@@ -1,0 +1,38 @@
+.benefit-slider {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.swiper-overlay img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.slider-wrap {
+  position: relative;
+  z-index: 1;
+}
+
+.img-responsive {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Swiper Pagination */
+.swiper-pagination-bullet {
+  background-color: #333;
+  opacity: 0.7;
+}
+.swiper-pagination-bullet-active {
+  background-color: #007aff;
+  opacity: 1;
+}

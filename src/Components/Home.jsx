@@ -15,8 +15,8 @@ const cards = [{ TITLE: "BINANCE 1", ICON: binance },
 
 const Home = () => {
   return (
-      <div className="h-screen bg-black">
-          <div className=" flex items-center  bg-[url('/src/assets/bg-2.png')] bg-no-repeat  max-md:mt-20 ">
+      <div className="min-h-screen bg-black max-sm:mt-0">
+          <div className=" flex items-center  bg-[url('/src/assets/bg-2.png')] bg-no-repeat bg-cover bg-center  max-md:mt-20 ">
               <div className='mb-10 ml-16'>
                   <div className='max-md:h-full max-sm:text-md max-sm:mx-auto max-sm:mt-5'>
                       <div className='mt-[200px]  max-md:mt-2 max-sm:mt-10'>
@@ -35,7 +35,7 @@ const Home = () => {
                               </p>
                               <p className="font-[FontSpring]  text-[#FFFFFF] text-[22px] max-sm:text-md">favorite exchanges</p>
                           </div>
-                          <div className="flex items-center justify-center w-full mx-auto mt-5 space-x-10 max-md:grid-cols-2 max-md:grid max-md:gap-2 max-md:space-x-0">
+                          <div className="flex items-center justify-center w-full mx-auto mt-5 space-x-10 max-md:grid-cols-2 max-md:grid max-md:gap-2 max-md:space-x-0 max-sm:grid-cols-1 ">
                               {
                                   cards.map((item, index) => {
                                       return (

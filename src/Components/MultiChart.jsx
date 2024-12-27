@@ -2,8 +2,8 @@ import mutlicart from '../assets/multichart.mp4'
 const MultiChart = () => {
   return (
       <div className='bg-black'>
-          <div className='flex'>
-              <div className='w-[55%] ml-10'>
+          <div className='flex max-sm:flex-col max-sm:items-center max-sm:justify-center'>
+              <div className='w-[55%] max-sm:w-full md:ml-10'>
                   <div>
                       <div className="flex items-center justify-center w-full px-4 py-2 text-white bg-black border-t-2 rounded-t-[40px] ">
                           {/* Left Text */}
