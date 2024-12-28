@@ -6,9 +6,9 @@ const Signin = () => {
     return (
         <div className='flex bg-[url("/src/assets/bgloginjpg.jpg")] bg-no-repeat  flex-col w-screen h-screen '>
             <div className='flex items-center justify-center m-2'>
-                <div to='/'>
+                <Link to='/'>
                     <img src={logo} alt="logo" className='w-[245px] text-center h-[53px]' />
-                </div>
+                </Link>
 
             </div>
             <div className='flex items-center justify-center h-full mx-auto max-md:flex-col max-lg:flex'>

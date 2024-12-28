@@ -2,6 +2,7 @@ import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import arrow from "../assets/arrow.png";
+import { Link } from "react-router-dom";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -53,14 +54,16 @@ const TradeAnyware = () => {
                 </div>
 
                 <div className="flex items-center justify-center mt-12">
-                    <button className="flex items-center px-8 py-3 text-white bg-[#5f29b7] rounded-3xl text-[32px] gap-6">
-                        Create an account{" "}
-                        <img
-                            src={arrow}
-                            alt=""
-                            className="transition-all duration-200 rounded-full hover:scale-110"
-                        />
-                    </button>
+                    <Link to='/signup'>
+                        <button className="flex items-center px-8 py-3 text-white bg-[#5f29b7] rounded-3xl text-[32px] gap-6">
+                            Create an account{" "}
+                            <img
+                                src={arrow}
+                                alt=""
+                                className="transition-all duration-200 rounded-full hover:scale-110"
+                            />
+                        </button>
+                   </Link>
                 </div>
             </div>
         </div>

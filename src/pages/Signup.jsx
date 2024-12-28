@@ -1,14 +1,13 @@
 import logo from '../assets/logo (2).png'
 import { MdArrowRightAlt } from "react-icons/md";
-import { IoEye, IoEyeOffOutline } from "react-icons/io5";
 import { Link } from 'react-router-dom';
 const Signup = () => {
     return (
         <div className='flex bg-[url("/src/assets/bgloginjpg.jpg")] bg-no-repeat  flex-col w-screen h-screen '>
             <div className='flex items-center justify-center m-2'>
-                <div to='/'>
+                <Link to='/'>
                     <img src={logo} alt="logo" className='w-[245px] text-center h-[53px]' />
-                </div>
+                </Link>
 
             </div>
             <div className='flex flex-col items-center justify-center h-full mx-auto max-md:flex-col'>
@@ -80,7 +79,7 @@ const Signup = () => {
                         </Link>
                     </div>
                 </div>
-                    <h1 className='mt-2 text-sm'>By signing up, you agree to User Agreement and Privacy Policy</h1>
+                <h1 className='mt-2 text-sm'>By signing up, you agree to User Agreement and Privacy Policy</h1>
 
 
             </div>

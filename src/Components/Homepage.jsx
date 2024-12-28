@@ -57,7 +57,7 @@ const Homepage = () => {
       {showScrollTopButton && (
         <button
           onClick={scrollToTop}
-          className=" sctoll-to-top-btn showed animate-bounce"
+          className=" sctoll-to-top-btn showed animate-bounce hover:bg-[#8453d1] hover:text-white rounded-full p-2 fixed bottom-10 right-10 text-white"
           type="button"
         >
           <i className="">

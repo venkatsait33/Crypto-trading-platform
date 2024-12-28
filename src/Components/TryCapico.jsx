@@ -2,6 +2,7 @@ import arrow from '../assets/arrow.png'
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { Link } from 'react-router-dom';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -31,8 +32,10 @@ const TryCapico = () => {
 
                         </div>
                         <div className='lg:mt-20'>
-                            <button className='flex items-center mt-12 md:px-8 md:py-3 text-white bg-[#5f29b7] rounded-3xl  md:text-[32px] md:gap-6 gap-2'>Create an account
-                                <img src={arrow} alt="" className='transition-all duration-200 rounded-full max-sm:text-[12px] hover:scale-110 object-scale-down ' /></button>
+                            <Link to='/signup'>
+                                <button className='flex items-center mt-12 md:px-8 md:py-3 text-white bg-[#5f29b7] rounded-3xl  md:text-[32px] md:gap-6 gap-2'>Create an account
+                                    <img src={arrow} alt="" className='transition-all duration-200 rounded-full max-sm:text-[12px] hover:scale-110 object-scale-down ' /></button>
+                            </Link>
                         </div>
                     </div>
                     <div>

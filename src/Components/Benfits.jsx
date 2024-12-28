@@ -2,8 +2,8 @@ import benefitVideo from '../assets/benfits.mp4'
 const Benefits = () => {
   return (
       <div className='min-h-screen bg-black'>
-          <div>
-              <div className="flex items-center justify-between w-full px-4 py-2 text-white bg-black border-t-2 rounded-t-3xl ">
+          <div className='p-4'>
+              <div className="flex items-center justify-between w-full px-8 py-4 text-white bg-black border-t-2 rounded-t-3xl ">
                   {/* Left Text */}
                   <h1 className="text-2xl font-bold">Benefits</h1>
 

@@ -19,7 +19,7 @@ const Portfolio_statistics = () => {
             alt: "Benefit Slide 1",
         },
         {
-            img:img2,
+            img: img2,
             img2x: img1,
             alt: "Benefit Slide 2",
         },
@@ -31,15 +31,15 @@ const Portfolio_statistics = () => {
         alt: "Overlay",
     };
     return (
-        <div className='bg-black '>
+        <div className='relative w-full bg-black '>
             <div className='flex p-4 max-sm:flex-col max-md:flex-col'>
-                <div className="lg:w-[50%] ">
-                    <div className="relative w-full h-screen overflow-hidden">
+                <div className="lg:w-[50%] h-[500px] ">
+                    <div className="relative w-full h-full overflow-hidden">
                         {/* Overlay */}
                         <picture className="absolute inset-0 z-10">
                             <source media="(min-width: 768px)" srcSet={overlay.img2x} />
                             <img
-                                className="object-cover w-full h-full"
+                                className="object-cover object-center w-full h-full"
                                 src={overlay.img}
                                 alt={overlay.alt}
                             />
@@ -64,7 +64,7 @@ const Portfolio_statistics = () => {
                                     <picture>
                                         <source media="()" srcSet={slide.img2x} />
                                         <img
-                                            className=" rotate-[22deg]   object-contain   mt-36  "
+                                            className=" rotate-[20deg]      h-[82%] mt-2 w-[85%] object-scale-down  "
                                             src={slide.img}
                                             alt={slide.alt}
                                         />
@@ -85,7 +85,7 @@ const Portfolio_statistics = () => {
                         <div className="absolute z-30 transform -translate-x-1/2 swiper-pagination bottom-4 left-1/2"></div>
                     </div>
                 </div>
-                <div className='w-[50%] bg-black'>
+                <div className='w-[50%]  bg-black'>
                     <div className="flex flex-col items-center justify-center w-full px-4 py-2 text-white  border-t-2 rounded-t-[40px] ">
                         {/* Left Text */}
                         <h1 className="text-[100px] font-[NekstFont]   text-transparent max-sm:text-xl bg-clip-text bg-gradient-to-l bg-white from-purple-300 to-pink-100">Portfolio &</h1>

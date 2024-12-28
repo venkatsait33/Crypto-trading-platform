@@ -94,7 +94,7 @@ const Features = () => {
 
     return (
         <div className="bg-black" id='features'>
-            <div className="md:min-h-screen p-6 rounded-[40px] text-white bg-gradient-to-br from-purple-900 to-purple-700 ">
+            <div className=" p-6 rounded-[40px] text-white bg-gradient-to-br from-purple-900 to-purple-700 ">
                 {/* Header */}
                 <div className="w-full px-4 py-2 ">
                     <div className="flex items-center justify-between mb-8 text-center">

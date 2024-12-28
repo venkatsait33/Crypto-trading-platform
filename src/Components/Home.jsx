@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import arrow from "../assets/arrow.png"
 import binance from '../assets/icons/binance.png'
 import bybit from '../assets/icons/bybit.png'
@@ -23,12 +24,15 @@ const Home = () => {
                           <h1 className='font-[NekstFont]   text-[#FFFFFF] text-[62px] max-sm:text-xl'>Crypto Trading</h1>
                           <h2 className=' font-[NekstFont]  text-transparent max-sm:text-xl bg-clip-text bg-gradient-to-r bg-white from-purple-300 to-pink-900 text-[62px]'>With bots <span className='text-white'>and</span></h2>
                           <h2 className=' font-[NekstFont] max-sm:text-xl text-transparent bg-clip-text bg-gradient-to-r bg-white from-purple-300 to-pink-900 text-[62px]' >smart seals</h2>
-                          <button className='btn bg-[#5F29B7] mt-4 w-[200px] font-[NekstFont]  place-items-center  text-white text-[20px] hover:bg-[#884fe4]'>Sign Up
-                              <span>
-                                  <img src={arrow} alt="" className="w-10 h-8" />
-                              </span>
+                          <Link to='/signup'>
+                              <button className='btn bg-[#5F29B7] mt-4 w-[200px] font-[NekstFont]  place-items-center  text-white text-[20px] hover:bg-[#884fe4]'>Sign Up
+                                  <span>
+                                      <img src={arrow} alt="" className="w-10 h-8" />
+                                  </span>
 
-                          </button>
+                              </button>
+                          </Link>
+                        
                           <div className="mt-10">
                               <p className="font-[NekstFont]   text-[#FFFFFF] text-[22px] max-sm:text-md">
                                   Trade for free on your
