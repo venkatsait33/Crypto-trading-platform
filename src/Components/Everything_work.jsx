@@ -39,11 +39,11 @@ const cards = [{
 }]
 const Everything_work = () => {
     return (
-        <div className='min-h-screen bg-black'>
+        <div className='bg-black '>
             <div className='p-4'>
                 <div className="flex  w-full px-4 py-2 text-white  border-t-2 rounded-t-[40px] ">
                     {/* Left Text */}
-                    <div className="text-[70px] font-[FontSpring] flex flex-col  text-transparent max-sm:text-xl bg-clip-text bg-gradient-to-l bg-white ml-4 from-purple-300 to-pink-100 leading-none">
+                    <div className="text-[70px] font-[NekstFont]  flex flex-col  text-transparent max-sm:text-xl bg-clip-text bg-gradient-to-l bg-white ml-4 from-purple-300 to-pink-100 leading-none">
                         <span> Everything for your need</span>
                         <span>
                             for comfortable work
@@ -52,11 +52,11 @@ const Everything_work = () => {
                 </div>
                 <div>
 
-                    <div className='relative w-full h-screen overflow-hidden'>
+                    <div className='relative w-full overflow-hidden'>
                         <div>
-                            <button className="absolute z-30 px-4 py-2 text-white transform -translate-y-32 rounded-full swiper-button-prev top-1/2 left-4">
+                            <button className="absolute z-30 px-4 py-2 text-white transform -translate-y-2 rounded-full swiper-button-prev top-1/2 left-4">
                             </button>
-                            <button className="absolute z-30 px-4 py-2 text-white transform -translate-y-32 rounded-full swiper-button-next top-1/2 right-4">
+                            <button className="absolute z-30 px-4 py-2 text-white transform -translate-y-2 rounded-full swiper-button-next top-1/2 right-4">
                             </button></div>
                         <Swiper
                             modules={[Navigation, Pagination]}
@@ -66,7 +66,24 @@ const Everything_work = () => {
                             }}
                             pagination={{ el: ".swiper-pagination", clickable: true }}
                             spaceBetween={40}
-                            slidesPerView={4}
+                            breakpoints={{
+                                // Default: 1 slide
+                                0: {
+                                    slidesPerView: 1,
+                                },
+                                // Small screens: 2 slides
+                                640: {
+                                    slidesPerView: 2,
+                                },
+                                // Medium screens: 3 slides
+                                768: {
+                                    slidesPerView: 3,
+                                },
+                                // Large screens: 4 slides
+                                1024: {
+                                    slidesPerView: 4
+                                }
+                            }}
                             className="relative z-20 h-full cursor-pointer"
                         >
                             {cards.map((item, index) => (

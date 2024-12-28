@@ -2,17 +2,6 @@ import { Link } from 'react-router-dom'
 import logo from '../assets/logo (2).png'
 import { MdArrowRightAlt } from 'react-icons/md'
 
-const list = [{
-    name: 'features'
-}, {
-    name: 'prices'
-}, {
-    name: 'partners'
-}, {
-    name: 'knowledge base'
-}, {
-    name: 'academy'
-}]
 
 const Navbar = () => {
     return (
@@ -25,13 +14,15 @@ const Navbar = () => {
                         <img src={logo} alt="logo" className='w-[245px] h-[53px]' />
                     </Link>
                 </div>
-                <div className='flex gap-4 navbar-center'>{
-                    list.map((item, index) => {
-                        return <p key={index} className='hover:text-[#5F29B7] text-white font-[FontSpring] text-[20px]'>{item.name}</p>
-                    })
-                }</div>
+                <div className='flex gap-4 navbar-center'>
+                 
+                    <a href='#features' className='hover:text-[#8453d1] text-white font-[NekstFont] text-[20px]'>features</a>
+                    <p className='hover:text-[#8453d1] text-white font-[NekstFont] text-[20px]'>prices</p>
+                    <a href='#partners' className='hover:text-[#8453d1] text-white font-[NekstFont] text-[20px]'>partners</a>
+                    <p className='hover:text-[#8453d1] text-white font-[NekstFont] text-[20px]'>knowledge base</p>
+                </div>
                 <div className=' navbar-end'>
-                    <Link to='/signin' className=''><button className='btn bg-[#5F29B7] mt-4 w-[200px] h-[30px] font-[FontSpring] place-items-center  text-white text-[20px] hover:bg-[#884fe4]'>Sign in
+                    <Link to='/signin' className=''><button className='btn bg-[#5F29B7] mt-4 w-[200px] h-[30px] font-[NekstFont] place-items-center  text-white text-[20px] hover:bg-[#884fe4]'>Sign in
                         <span>
                             <MdArrowRightAlt />
                         </span>

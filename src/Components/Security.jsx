@@ -24,7 +24,7 @@ const Security = () => {
                     <div className='p-4 '>
                     <div className="flex justify-between w-full px-4 py-2 text-white bg-black border-t-2 rounded-t-3xl ">
                         {/* Left Text */}
-                          <div className="font-[FontSpring]   max-sm:text-xl  text-[70px] flex flex-col ml-8 leading-none "><span>High -</span> <span className="">Security</span>
+                          <div className="font-[NekstFont]    max-sm:text-xl  text-[70px] flex flex-col ml-8 leading-none "><span>High -</span> <span className="">Security</span>
                               <span className="">platform</span></div>
 
                           <span className="mt-4 text-sm text-gray-400">Your account carefully protected</span>
@@ -38,7 +38,7 @@ const Security = () => {
                           <img src={lock} alt="" className='object-cover mx-auto' />
                       </div>
                       <div>
-                          <div className='grid grid-cols-2 gap-6 p-4 max-sm:grid-cols-1'>
+                          <div className='grid grid-cols-2 gap-6 p-4 max-md:grid-cols-1 max-sm:grid-cols-1'>
                               {securityData.map((item, index) => (
                                   <div key={index} className="flex items-center flex-col justify-between p-4 w-[300px] h-[300px]  border-2 rounded-3xl">
                                       <div className='flex flex-col items-center gap-4 justify-evenly '> <h1 className='text-2xl font-bold text-white'>{item.title}</h1>

@@ -1,4 +1,4 @@
-import  { useRef } from 'react'
+import { useRef } from 'react'
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -28,7 +28,7 @@ const Portfolio_statistics = () => {
     };
     return (
         <div className='bg-black '>
-            <div className='flex p-4 max-md:flex-col'>
+            <div className='flex p-4 max-sm:flex-col max-md:flex-col'>
                 <div className="lg:w-[50%] ">
                     <div className="relative w-full h-screen overflow-hidden">
                         {/* Overlay */}
@@ -71,10 +71,10 @@ const Portfolio_statistics = () => {
 
                         {/* Custom Navigation Buttons */}
                         <button className="absolute z-30 px-4 py-2 text-white transform -translate-y-1/2 rounded-full swiper-button-prev top-1/2 left-4">
-                            
+
                         </button>
                         <button className="absolute z-30 px-4 py-2 text-white transform -translate-y-1/2 rounded-full swiper-button-next top-1/2 right-4">
-                            
+
                         </button>
 
                         {/* Pagination Bar */}
@@ -84,34 +84,34 @@ const Portfolio_statistics = () => {
                 <div className='w-[50%] bg-black'>
                     <div className="flex flex-col items-center justify-center w-full px-4 py-2 text-white  border-t-2 rounded-t-[40px] ">
                         {/* Left Text */}
-                        <h1 className="text-[100px] font-[FontSpring]  text-transparent max-sm:text-xl bg-clip-text bg-gradient-to-l bg-white from-purple-300 to-pink-100">Portfolio &</h1>
-                        <h1 className="text-[100px] font-[FontSpring]  text-transparent max-sm:text-xl bg-clip-text bg-gradient-to-l bg-white from-purple-300 to-pink-100">Statistics </h1>
+                        <h1 className="text-[100px] font-[NekstFont]   text-transparent max-sm:text-xl bg-clip-text bg-gradient-to-l bg-white from-purple-300 to-pink-100">Portfolio &</h1>
+                        <h1 className="text-[100px] font-[NekstFont]   text-transparent max-sm:text-xl bg-clip-text bg-gradient-to-l bg-white from-purple-300 to-pink-100">Statistics </h1>
 
-                       
+
 
 
 
                     </div>
                     <div className='flex justify-evenly'>
                         <div className=''>
-                            <div className=' text-[32px] text-white font-[FontSpring] flex flex-col '><span>
+                            <div className=' text-[32px] text-white font-[NekstFont]  flex flex-col '><span>
                                 Your assets on all
                             </span>
                                 <span>connected exchanges in</span>
                                 <span>
                                     one place
-                            </span></div>
-                           
+                                </span></div>
+
 
                         </div>
                         <div>
-                            <div className='flex flex-col text-[18px]text-[#b7b1c3] font-[FontSpring]'><span>
+                            <div className='flex flex-col text-[18px]text-[#b7b1c3] font-[NekstFont] '><span>
                                 Easy-to-read trading stats
                             </span>
                                 <span>
                                     Downloadable reports
-                            </span></div>
-                          
+                                </span></div>
+
                         </div>
                     </div>
                 </div>

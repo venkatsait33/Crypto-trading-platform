@@ -74,7 +74,7 @@ const Features = () => {
             setActiveIndex((prevIndex) =>
                 prevIndex === featuresData.length - 1 ? 0 : prevIndex + 1
             );
-        }, 3000); // Change slide every 3 seconds
+        }, 4000); // Change slide every 3 seconds
 
         return () => clearInterval(interval); // Cleanup on unmount
     }, []);
@@ -93,12 +93,12 @@ const Features = () => {
     };
 
     return (
-        <div className="bg-black">
-            <div className="min-h-screen p-6 rounded-[40px] text-white bg-gradient-to-br from-purple-900 to-purple-700 ">
+        <div className="bg-black" id='features'>
+            <div className="md:min-h-screen p-6 rounded-[40px] text-white bg-gradient-to-br from-purple-900 to-purple-700 ">
                 {/* Header */}
                 <div className="w-full px-4 py-2 ">
                     <div className="flex items-center justify-between mb-8 text-center">
-                        <h1 className="text-4xl font-bold font-[FontSpring]">Features</h1>
+                        <h1 className="text-4xl font-bold font-[NekstFont] ">Features</h1>
                         <p className="text-sm text-purple-300">Master the market</p>
                     </div></div>
 
@@ -135,13 +135,13 @@ const Features = () => {
                         </div>
 
                         <p className="mb-4 text-purple-200">{featuresData[activeIndex].text}</p>
-                        <button className="px-4 py-2 text-white transition border border-white rounded hover:bg-white hover:text-purple-600">
+                        <button className="px-4 py-2 text-white transition border border-white rounded hover:bg-white hover:text-purple-600 w-[50%] mx-auto">
                             Learn more →
                         </button>
                     </div>
 
                     {/* Navigation Buttons */}
-                    <div className="flex flex-col space-y-4 right-8 bottom-8">
+                    <div className="flex flex-col space-y-4 right-8 bottom-8 max-sm:hidden md:block">
                         <button
                             onClick={() => handleNavigate("up")}
                             className="flex items-center justify-center w-10 text-white border border-white h-28 rounded-xl hover:bg-white hover:text-purple-600"
