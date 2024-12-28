@@ -30,7 +30,7 @@ const Numbers = () => {
                 <motion.div
                     className="bg-center bg-no-repeat bg-cover "
                     style={{
-                        backgroundImage: bgimg, // Replace with your path
+                        backgroundImage: `url(${bgimg})`, // Replace with your path
                         backgroundPositionY: backgroundPosition, // Apply scroll animation to background
                     }}
                 >
