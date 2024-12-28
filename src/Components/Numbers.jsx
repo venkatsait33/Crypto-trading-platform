@@ -13,7 +13,7 @@ const Numbers = () => {
     );
 
     // Debug: Log the scroll progress
-    console.log("ScrollYProgress:", scrollYProgress);
+ 
 
     return (
         <div className="">

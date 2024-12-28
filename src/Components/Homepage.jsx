@@ -40,7 +40,7 @@ const Homepage = () => {
   };
 
   return (
-    <div className="bg-black">
+    <div className="bg-black scroll-smooth">
       <Home />
       <VideoSection />
       <Numbers />
