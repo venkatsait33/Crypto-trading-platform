@@ -5,25 +5,29 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Autoplay, Navigation, Pagination } from 'swiper/modules';
 
+import img1 from "../assets/benefit-slider01.jpg"
+import img2 from "../assets/benefit-slider02.jpg"
+import slider from '../assets/benefit-slider-overlay.png'
+
 const Portfolio_statistics = () => {
     const swiperRef = useRef(null);
 
     const slides = [
         {
-            img: "src/assets/benefit-slider01.jpg",
-            img2x: "src/assets/benefit-slider02.jpg",
+            img: img1,
+            img2x: img2,
             alt: "Benefit Slide 1",
         },
         {
-            img: "src/assets/benefit-slider02.jpg",
-            img2x: "src/assets/benefit-slider01.jpg",
+            img:img2,
+            img2x: img1,
             alt: "Benefit Slide 2",
         },
     ];
 
     const overlay = {
-        img: "src/assets/benefit-slider-overlay.png",
-        img2x: "src/assets/benefit-slider-overlay.png",
+        img: slider,
+        img2x: slider,
         alt: "Overlay",
     };
     return (

@@ -1,5 +1,6 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import CountUp from "../utils/CountUp";
+import bgimg from '../assets/numbers-bg.png'
 
 const Numbers = () => {
     const { scrollYProgress } = useScroll(); // Get scroll progress (0 to 1)
@@ -29,7 +30,7 @@ const Numbers = () => {
                 <motion.div
                     className="bg-center bg-no-repeat bg-cover "
                     style={{
-                        backgroundImage: "url('/src/assets/numbers-bg.png')", // Replace with your path
+                        backgroundImage: bgimg, // Replace with your path
                         backgroundPositionY: backgroundPosition, // Apply scroll animation to background
                     }}
                 >
